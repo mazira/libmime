@@ -19,7 +19,7 @@
     "test": "grunt mochaTest"
   },
   "dependencies": {
-    "iconv-lite": "0.4.15",
+    "iconv": "2.2.3",
     "libbase64": "0.1.0",
     "libqp": "1.1.0"
   },

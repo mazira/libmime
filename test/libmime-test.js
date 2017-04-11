@@ -78,6 +78,10 @@ describe('libmime', function () {
             expect('Jõge-vaŽ').to.equal(libmime.decodeWord('=?ISO-8859-13?Q?J=F5ge-va=DE?='));
         });
 
+        it('should decode ISO-2022-JP QP-encoded mime word', function () {
+            expect('アイテム価格ファイル').to.equal(libmime.decodeWord('=?ISO-2022-JP?B?GyRCJSIlJCVGJWAyQTNKJVUlISUkJWsbKEI=?='));
+        });
+
         it('should decode ascii range', function () {
             var input1 = 'метель" вьюга',
                 input2 = 'метель\'вьюга',
